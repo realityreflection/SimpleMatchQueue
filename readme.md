@@ -3,16 +3,17 @@ SimpleMatchQueue
 
 Straightforward match queue server for in-house testing purpose.
 
+
 ```
 GET /queue/join
 ```
 * __RequestParameters__
-  * suffix(optional) : client uniq id
+  * __suffix(optional)__ : client uniq id
 
 * __Response__
-  * description : human readable string
-  * match_created : whether match created or not
-  * opponent : only valid if `match_created` is `true`
-    * uid : opponent's uniq id
-    * ipAddress : opponent's ip address
-  * server_time
+  * __description__ : human readable string
+  * __match_created__ : whether match created or not
+  * __opponent__ : only valid if `match_created` is `true`
+    * __uid__ : opponent's uniq id
+    * __ip_address__ : opponent's ip address
+  * __server_time__
